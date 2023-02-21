@@ -1,0 +1,19 @@
+import React, { useState,useEffect }from 'react';
+
+
+
+const App = () => {
+  const names = ['jones', "Nickj", "Latha", "jabili", " jasmi"];
+  const filt = names.filter((name ) => name.includes("j"));
+  return(
+    <div>{
+      filt.map(item => <li>{item}</li>)
+      
+      }
+    </div>
+  );
+  
+}
+
+
+export default App;
